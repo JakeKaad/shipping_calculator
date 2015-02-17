@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shipping Cost</title>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shipping Cost</h1>
+      <form id="shipping-calculator">
+
+        <div class='form-group'>
+          <label for="distance">Distance</label>
+          <input type="text" id="distance" placeholder="250">
+        </div>
+
+        <div class='form-group'>
+          <label for="box-options">Box Size</label>
+          <select id="box-options" name="box-options">
+            <option value="40 80">Small (4x8x4)</option>
+            <option value="80 160">Medium (8x16x8)</option>
+            <option value="120 240">Large (12x24x12)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="weight">Weight</label>
+          <input type="text" id="weight">
+        </div>
+
+        <button class='btn btn-success'>Submit</button>
+      </form>
+
+      <div id="total-cost">
+        <p id="cost-paragraph"></p>
+      </div>
+    </div>
+  </body>
+</html>
